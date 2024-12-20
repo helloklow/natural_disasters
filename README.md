@@ -1,2 +1,3 @@
-# natural_disasters
-Natural disaster risk prediction final project
+# Natural_disasters
+
+## Contributors
