@@ -1,8 +1,8 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/postgres
 {
-	"name": "Python 3 & TensorFlow",
-	"dockerComposeFile": "docker-compose.yml",
+	"name": "Python 3.10 data science skeleton container",
+	"dockerComposeFile": "docker-compose.yaml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
