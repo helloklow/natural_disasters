@@ -1,3 +1,3 @@
-# Natural_disasters
+# Natural disasters
 
 ## Contributors
