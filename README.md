@@ -1,5 +1,5 @@
 # U.S. Natural Disaster Prediction App
-A data science app utilizing data on FEMA-declared disasters to predict and identify potential natural disasters, specifically focused on the most common disasters in the U.S. - severe storms, hurricanes, and floods. This app is intended to provide early warnings and assist in disaster preparedness and response efforts. 
+A data science app utilizing FEMA data on natural disasters declared in the U.S. between 1953 and 2023. This app aims to predict and identify potential natural disasters, specifically focused on the most common disasters in the U.S. - severe storms, hurricanes, floods, tornados, and fires. Please note, this project is educational only and is not guaranteed to provide accurate predictions.  
 
 
 ## Data
