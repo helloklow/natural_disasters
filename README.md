@@ -3,16 +3,13 @@ A data science app utilizing data on FEMA-declared disasters to predict and iden
 
 
 ## Data
-[U.S. Natural Disaster Declarations on Kaggle](https://www.kaggle.com/datasets/headsortails/us-natural-disaster-declarations)
-
+[U.S. Natural Disaster Declarations on Kaggle](https://www.kaggle.com/datasets/headsortails/us-natural-disaster-declarations)\
 County-level data from the Federal Emergency Management Agency (FEMA) from 1953-2023.
 
 
 ## Tech Stack
-**Data Analysis:** Pandas, Numpy, Matplotlib, Seaborn
-
-**Modeling:** Python, Scikit-learn, TensorFlow
-
+**Data Analysis:** Pandas, Numpy, Matplotlib, Seaborn\
+**Modeling:** Python, Scikit-learn, TensorFlow\
 **Deployment:** Streamlit, Render
 
 
