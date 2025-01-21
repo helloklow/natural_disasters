@@ -10,7 +10,7 @@ County-level data from the Federal Emergency Management Agency (FEMA) from 1953 
 ## Tech Stack
 **Data Analysis:** Matplotlib, Numpy, Pandas, Seaborn\
 **Modeling:** Python, Scikit-learn, TensorFlow\
-**Deployment:**  Render, Streamlit
+**Deployment:**  Render, Flask
 
 
 ## Contributors
