@@ -13,7 +13,7 @@ import { Paper } from "@mui/material";
 function App() {
   const URL = "https://helloklow-natural-disasters.onrender.com";
   const [year, setYear] = useState(new Date().getFullYear());
-  const [view, setView] = useState("Avg");
+  const [view, setView] = useState("Fire");
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [isLoading, setisLoading] = useState(false);
@@ -53,7 +53,7 @@ function App() {
         <div className="error-view">
           <Alert severity="error" className="error_message">
             <AlertTitle>Error</AlertTitle>
-            <p>The server has reached it's usage limits :'(</p>
+            <p>The server has reached it's usage limit :'(</p>
           </Alert>
         </div>
       )}
@@ -71,9 +71,9 @@ function App() {
         </>
       ) : (
         <div className={`user-info ${error && "hidden"}`}>
-          <Alert severity="info">
-            <AlertTitle>Info</AlertTitle>
-            Must enter year for map.
+          <Alert severity="error">
+            {/* <AlertTitle>Info</AlertTitle> */}
+            Please enter year and select disaster to view map.
           </Alert>
         </div>
       )}
