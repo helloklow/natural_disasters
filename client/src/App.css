@@ -5,7 +5,7 @@ html {
 }
 
 #app {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway"; /*sans-seri*/
   max-width: 1280px;
   margin: auto;
   margin-top: 2rem;
@@ -146,7 +146,7 @@ html {
 
 /* Table */
 #app .state_row {
-  background-color: #262d30;
+  background-color: #ffffff;
   color: black;
 }
 
@@ -157,7 +157,7 @@ html {
 /* Discaimer */
 
 #app #disclaimer .disclaimer_box {
-  background-color: #262d30;
+  background-color: #ffffff;
 }
 
 #app #disclaimer .disclaimer_box path {
