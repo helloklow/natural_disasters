@@ -54,7 +54,6 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
                 error={errorMessage.length > 0}
                 onChange={handleUserInput}
                 helperText={errorMessage ? errorMessage : `Enter year between ${new Date().getFullYear()} and 2500`} />
-                <Button disabled={isLoading} variant="contained" onClick={handleBtn}>Predict</Button>
             </div>
         
             <FormControl className='mui-input' size='small'>
@@ -77,6 +76,7 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
                 {/* <MenuItem value={"Snowstorm"}>Snowstorm</MenuItem> */}
                 </Select>
             </FormControl>
+            <Button disabled={isLoading} variant="contained" onClick={handleBtn}>Predict</Button>
             </div>
             <div className='nav-right'>
                 <Button href="#section-map">Map</Button>
