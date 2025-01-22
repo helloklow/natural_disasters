@@ -11,9 +11,9 @@ import AlertTitle from "@mui/material/AlertTitle";
 import { Paper } from "@mui/material";
 
 function App() {
-  const URL = "https://helloklow-natural-disasters.onrender.com";
+  const URL = "https://natural-disaster-predictor-production.up.railway.app/";
   const [year, setYear] = useState(new Date().getFullYear());
-  const [view, setView] = useState("Fire");
+  const [view, setView] = useState("Severe Storm");
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [isLoading, setisLoading] = useState(false);
@@ -73,7 +73,7 @@ function App() {
         <div className={`user-info ${error && "hidden"}`}>
           <Alert severity="error">
             {/* <AlertTitle>Info</AlertTitle> */}
-            Please enter year and select disaster to view map.
+            Please enter year and select disaster to view predictions.
           </Alert>
         </div>
       )}
@@ -86,16 +86,6 @@ function App() {
           </span>
         </div>
       )}
-
-      <div id="disclaimer" className={data ? "show_bottom" : "show_top"}>
-        {/* <Alert className="disclaimer_box" severity="info">
-          US Natural Disaster Declarations dataset provided via{" "}
-          <a href="https://www.kaggle.com/datasets/headsortails/us-natural-disaster-declarations">
-            Kaggle
-          </a>
-          .
-        </Alert> */}
-      </div>
     </div>
   );
 }
