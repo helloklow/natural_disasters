@@ -76,9 +76,7 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
                 {/* <MenuItem value={"Snowstorm"}>Snowstorm</MenuItem> */}
                 </Select>
             </FormControl>
-            </div>
-            <div className="predict-btn">
-                <Button disabled={isLoading} variant="contained" onClick={handleBtn}>Predict</Button>
+            <Button disabled={isLoading} variant="contained" onClick={handleBtn}>Predict</Button>
             </div>
             {/* <div className='nav-right'>
                 <Button href="#section-map">Map</Button>
