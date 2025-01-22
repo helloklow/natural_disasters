@@ -18,7 +18,7 @@ def is_valid_year(year):
 
 @app.route('/', methods=['GET'])
 def index():
-    return "Welcome to Natural Disaster Prediction API"
+    return "U.S. Natural Disaster Prediction API"
 
 @app.route('/predict_disasters', methods=['GET'])
 def get_predictions():
