@@ -11,7 +11,7 @@ import AlertTitle from "@mui/material/AlertTitle";
 import { Paper } from "@mui/material";
 
 function App() {
-  const URL = "https://natural-disaster-predictor-production.up.railway.app/";
+  const URL = "https://helloklow-natural-disasters.onrender.com";
   const [year, setYear] = useState(new Date().getFullYear());
   const [view, setView] = useState("Avg");
   const [data, setData] = useState(null);
