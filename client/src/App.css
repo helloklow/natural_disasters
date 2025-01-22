@@ -5,9 +5,7 @@ html {
 }
 
 #app {
-  font-family: "Roboto", sans-serif;
-  background-color: #262d30;
-  color: #f4f6f7;
+  font-family: "Lato", sans-serif;
   max-width: 1280px;
   margin: auto;
   margin-top: 2rem;
@@ -84,6 +82,7 @@ html {
 #app .user-input .predict-btn {
   display: flex;
   gap: 3rem;
+  padding-right: 10rem;
 }
 
 /* Map */
