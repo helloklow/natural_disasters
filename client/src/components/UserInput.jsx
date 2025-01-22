@@ -78,11 +78,11 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
             </FormControl>
             <Button disabled={isLoading} variant="contained" onClick={handleBtn}>Predict</Button>
             </div>
-            <div className='nav-right'>
+            {/* <div className='nav-right'>
                 <Button href="#section-map">Map</Button>
                 <Button href="#section-bar">Bar</Button>
                 <Button href="#state_table">Table</Button>
-            </div>
+            </div> */}
       </Paper>
     )
 }

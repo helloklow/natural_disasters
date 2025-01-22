@@ -71,7 +71,7 @@ function App() {
         </>
       ) : (
         <div className={`user-info ${error && "hidden"}`}>
-          <Alert severity="error">
+          <Alert severity="info">
             {/* <AlertTitle>Info</AlertTitle> */}
             Please enter year and select disaster to view predictions.
           </Alert>
