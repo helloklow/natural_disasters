@@ -6,6 +6,8 @@ html {
 
 #app {
   font-family: "Roboto", sans-serif;
+  background-color: #262d30;
+  color: #f4f6f7;
   max-width: 1280px;
   margin: auto;
   margin-top: 2rem;
