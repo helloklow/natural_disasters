@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div id="app">
-      <h1>U.S. Natural Disaster Predictor</h1>
+      <h1>U.S. Natural Disaster Predictions</h1>
 
       {/* User Input */}
       <UserInput
@@ -53,17 +53,7 @@ function App() {
         <div className="error-view">
           <Alert severity="error" className="error_message">
             <AlertTitle>Error</AlertTitle>
-            <p>Unfortunately, the server has reached it's usage limits.</p>
-            <p>
-              You can find the source code
-              <a
-                target="_blank"
-                href="https://github.com/Leopoldov95/natural-disaster-predictor"
-              >
-                &nbsp;here&nbsp;
-              </a>
-              and run the project locally.
-            </p>
+            <p>The server has reached it's usage limits :'(</p>
           </Alert>
         </div>
       )}
@@ -83,7 +73,7 @@ function App() {
         <div className={`user-info ${error && "hidden"}`}>
           <Alert severity="info">
             <AlertTitle>Info</AlertTitle>
-            Please Enter Year To Visualize Map.
+            Must enter year for map.
           </Alert>
         </div>
       )}
@@ -92,19 +82,19 @@ function App() {
         <div className="loader">
           <CircularProgress />
           <span className="loading-text">
-            Please Wait, This May Take Awhile
+            Loading prediction...
           </span>
         </div>
       )}
 
       <div id="disclaimer" className={data ? "show_bottom" : "show_top"}>
-        <Alert className="disclaimer_box" severity="info">
+        {/* <Alert className="disclaimer_box" severity="info">
           US Natural Disaster Declarations dataset provided via{" "}
           <a href="https://www.kaggle.com/datasets/headsortails/us-natural-disaster-declarations">
             Kaggle
           </a>
           .
-        </Alert>
+        </Alert> */}
       </div>
     </div>
   );
