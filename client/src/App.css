@@ -73,7 +73,6 @@ html {
 #app .user-input .nav-left {
   display: flex;
   gap: 3rem;
-  padding-left: 10rem;
 }
 
 #app .mui-input {
