@@ -5,7 +5,7 @@ html {
 }
 
 #app {
-  font-family: "Courier", sans-serif;
+  font-family: "Roboto", sans-serif;
   max-width: 1280px;
   margin: auto;
   margin-top: 2rem;
@@ -79,6 +79,11 @@ html {
   width: 300px;
 }
 
+#app .user-input .predict-btn {
+  display: flex;
+  gap: 3rem;
+}
+
 /* Map */
 #app .map {
   margin: 2rem 0;
@@ -140,7 +145,7 @@ html {
 
 /* Table */
 #app .state_row {
-  background-color: #cfd8dc;
+  background-color: #262d30;
   color: black;
 }
 
@@ -151,7 +156,7 @@ html {
 /* Discaimer */
 
 #app #disclaimer .disclaimer_box {
-  background-color: #eceff1;
+  background-color: #262d30;
 }
 
 #app #disclaimer .disclaimer_box path {

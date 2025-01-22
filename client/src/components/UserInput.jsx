@@ -57,12 +57,12 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
             </div>
         
             <FormControl className='mui-input' size='small'>
-                <InputLabel id="demo-simple-select-label">View</InputLabel>
+                <InputLabel id="demo-simple-select-label">Select disaster</InputLabel>
                 <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 value={view}
-                label="View"
+                label="Select disaster"
                 onChange={handleView}
                 >
                 <MenuItem value={"Severe Storm"}>Severe Storm</MenuItem>
@@ -76,7 +76,9 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
                 {/* <MenuItem value={"Snowstorm"}>Snowstorm</MenuItem> */}
                 </Select>
             </FormControl>
-            <Button disabled={isLoading} variant="contained" onClick={handleBtn}>Predict</Button>
+            </div>
+            <div className="predict-btn">
+                <Button disabled={isLoading} variant="contained" onClick={handleBtn}>Predict</Button>
             </div>
             {/* <div className='nav-right'>
                 <Button href="#section-map">Map</Button>
