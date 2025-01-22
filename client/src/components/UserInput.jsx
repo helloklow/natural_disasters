@@ -32,7 +32,7 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
             return;
         }
 
-        if (input < new Date().getFullYear() || input > 2500) {
+        if (input < new Date().getFullYear() || input > 2200) {
             // year out of bounds
             setErrorMessage("Error: Not a valid year")
             return;
@@ -53,7 +53,7 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
                 value={input}
                 error={errorMessage.length > 0}
                 onChange={handleUserInput}
-                helperText={errorMessage ? errorMessage : `Enter year between ${new Date().getFullYear()} and 2500`} />
+                helperText={errorMessage ? errorMessage : `Enter year between ${new Date().getFullYear()} and 2200`} />
             </div>
         
             <FormControl className='mui-input' size='small'>
