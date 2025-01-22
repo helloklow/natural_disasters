@@ -2,6 +2,7 @@ import datetime
 from flask import Flask, request, jsonify
 from server.model import predict_by_year
 from flask_cors import CORS
+from waitress import serve
 
 app = Flask(__name__)
 CORS(app)
@@ -30,7 +31,5 @@ def get_predictions():
     predictions = predict_by_year(year)
     return predictions, 200
 
-
 if __name__ == "__main__":
-    from waitress import serve
     serve(app, host="0.0.0.0", port=5000)
