@@ -12,6 +12,7 @@ exceptiongroup==1.2.2
 executing==2.1.0
 fastparquet==2024.11.0
 Flask==3.1.0
+Flask_Cors~=4.0.0
 flatbuffers==24.12.23
 fonttools==4.55.3
 gast==0.6.0
