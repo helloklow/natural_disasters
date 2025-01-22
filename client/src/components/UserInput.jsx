@@ -28,13 +28,13 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
         //update the year
         if (!(/^\d{4}$/.test(input))) {
             // thrown an input error
-            setErrorMessage("Error: Not a valid Year!")
+            setErrorMessage("Error: Not a valid year")
             return;
         }
 
         if (input < new Date().getFullYear() || input > 2500) {
             // year out of bounds
-            setErrorMessage("Error: Year is out of bounds!")
+            setErrorMessage("Error: Not a valid year")
             return;
         }
 
@@ -49,11 +49,11 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
             <div className="year-input">
                 <TextField 
                 size='small'
-                label={`Enter Year`}
+                label={`Enter year`}
                 value={input}
                 error={errorMessage.length > 0}
                 onChange={handleUserInput}
-                helperText={errorMessage ? errorMessage : `Please Enter a Year between ${new Date().getFullYear()} And 2500`} />
+                helperText={errorMessage ? errorMessage : `Enter year between ${new Date().getFullYear()} and 2500`} />
                 <Button disabled={isLoading} variant="contained" onClick={handleBtn}>Predict</Button>
             </div>
         
@@ -66,15 +66,15 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
                 label="View"
                 onChange={handleView}
                 >
-                <MenuItem value={"Avg"}>Avg</MenuItem>
-                {/* <MenuItem value={"Biological"}>Biological</MenuItem> */}
-                <MenuItem value={"Fire"}>Fire</MenuItem>
-                <MenuItem value={"Flood"}>Flood</MenuItem>
-                <MenuItem value={"Hurricane"}>Hurricane</MenuItem>
-                {/* <MenuItem value={"Severe Ice Storm"}>Severe Ice Storm</MenuItem> */}
                 <MenuItem value={"Severe Storm"}>Severe Storm</MenuItem>
-                {/* <MenuItem value={"Snowstorm"}>Snowstorm</MenuItem> */}
+                <MenuItem value={"Hurricane"}>Hurricane</MenuItem>
+                <MenuItem value={"Flood"}>Flood</MenuItem>
+                <MenuItem value={"Fire"}>Fire</MenuItem>
                 <MenuItem value={"Tornado"}>Tornado</MenuItem>
+                {/* <MenuItem value={"Avg"}>Avg</MenuItem> */}
+                {/* <MenuItem value={"Biological"}>Biological</MenuItem> */}
+                {/* <MenuItem value={"Severe Ice Storm"}>Severe Ice Storm</MenuItem> */}
+                {/* <MenuItem value={"Snowstorm"}>Snowstorm</MenuItem> */}
                 </Select>
             </FormControl>
             </div>
