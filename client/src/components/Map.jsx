@@ -70,20 +70,23 @@ const Map = ({ data, view, year }) => {
       .attr("d", pathGenerator)
       .attr("fill", (d) => colorScale(colorValue(d)))
       .append("title")
-      .append("states")
       .text((d) => {
         const pred = d?.properties?.predictions;
         let output = `${d.properties.name}\n`;
-        if (pred) {
-          if (view === "Avg") {
-            for (let key in pred) {
-              output += `${key}: ${pred[key]}%`;
-            }
-          } else {
-            output += `${view}: ${pred[view]}%`;
-          }
-        }
         return output;
+      // .text((d) => {
+      //   const pred = d?.properties?.predictions;
+      //   let output = `${d.properties.name}\n`;
+      //   if (pred) {
+      //     if (view === "Avg") {
+      //       for (let key in pred) {
+      //         output += `${key}: ${pred[key]}%`;
+      //       }
+      //     } else {
+      //       output += `${view}: ${pred[view]}%`;
+      //     }
+      //   }
+      //   return output;
       });
 
     g.append("text")
