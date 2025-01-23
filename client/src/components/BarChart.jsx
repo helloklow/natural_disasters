@@ -90,8 +90,7 @@ const BarChart = ({ data, view, year }) => {
         tooltip
           .html(
             `
-          <span>${d.state}:</span>
-          <span>${d.predictions[view].toFixed(2)}%</span>
+          <span>${d.state}: ${d.predictions[view].toFixed(2)}%</span>
           `
           )
           .style("left", `${event.pageX}px`)

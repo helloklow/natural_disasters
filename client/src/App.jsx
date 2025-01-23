@@ -5,7 +5,6 @@ import Map from "./components/Map";
 import UserInput from "./components/UserInput";
 import BarChart from "./components/BarChart";
 import CircularProgress from "@mui/material/CircularProgress";
-import StateTable from "./components/StateTable";
 import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
 import { Paper } from "@mui/material";
