@@ -125,6 +125,22 @@
   font-size: 0.75rem;
 }
 
+/* Bar chart */
+#app .chart-container .tooltip {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#app .chart-container {
+  margin-bottom: 2rem;
+}
+
+#app .chart-container svg .bar:hover {
+  opacity: 0.5;
+}
+
 /* Error View */
 #app .error-view {
   height: 450px;
