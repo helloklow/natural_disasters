@@ -36,7 +36,9 @@ function App() {
 
   return (
     <div id="app">
-      <h1>U.S. Natural Disaster Predictions</h1>
+      <div id="header">
+        <h1>U.S. Natural Disaster Predictions</h1>
+      </div>
 
       {/* User Input */}
       <UserInput
