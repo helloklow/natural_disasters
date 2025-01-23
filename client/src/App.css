@@ -18,7 +18,6 @@
 
 #app .header {
   /* margin-bottom: 1rem; */
-  background-color: #222424;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +29,7 @@
 
 /* User Input */
 #app .user-input {
+  background-color: #222424;
   padding: 1rem 2rem;
   float: left;
   display: block;
