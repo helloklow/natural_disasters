@@ -33,18 +33,18 @@ function App() {
     }
   };
 
-  function switchVisible() {
-    if (document.getElementById('section-map')) {
-        if (document.getElementById('section-map').style.display == 'none') {
-            document.getElementById('section-map').style.display = 'block';
-            document.getElementById('section-bar').style.display = 'none';
-        }
-        else {
-            document.getElementById('section-map').style.display = 'none';
-            document.getElementById('section-bar').style.display = 'block';
-        }
-    }
-  }
+  // function switchVisible() {
+  //   if (document.getElementById('section-map')) {
+  //       if (document.getElementById('section-map').style.display == 'none') {
+  //           document.getElementById('section-map').style.display = 'block';
+  //           document.getElementById('section-bar').style.display = 'none';
+  //       }
+  //       else {
+  //           document.getElementById('section-map').style.display = 'none';
+  //           document.getElementById('section-bar').style.display = 'block';
+  //       }
+  //   }
+  // }
 
   return (
     <div id="app">
