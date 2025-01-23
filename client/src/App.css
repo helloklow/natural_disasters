@@ -36,25 +36,25 @@
   display:block;
 }
 
+#app .user-input .year-input {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+#app .mui-input {
+  width: 300px;
+} 
+
 #app .user-input .btn {
   display: flex;
   align-items: baseline;
   gap: 2rem;
 }
 
-/* #app .user-input .year-input {
-  display: flex;
-  align-items: baseline;
-  gap: 2rem;
-}
-
-#app .user-input .nav-left {
+/* #app .user-input .nav-left {
   display: flex;
   gap: 3rem;
-}
-
-#app .mui-input {
-  width: 300px;
 } */
 
 /* Map */
