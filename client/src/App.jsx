@@ -49,17 +49,6 @@ function App() {
         isLoading={isLoading}
       />
 
-      {/* Welcome */}
-      <div className="welcome">
-        <h2>Welcome!</h2>
-        <p>This app predicts and identifies potential natural disasters, specifically focused on the most common disasters in the U.S.</p>
-        <p>- severe storms</p>
-        <p>- hurricanes</p>
-        <p>- floods</p>
-        <p>- fires</p>
-        <p>- tornadoes</p>
-      </div>
-
       {/* Error Display */}
       {/* Error view */}
       {error && (
