@@ -41,6 +41,7 @@ const Map = ({ data, view, year }) => {
     const title = `${year} predicted ${view} incidents`;
     const subheader = "*Hover over state for more detail";
     const g = svg.append("g").attr("class", "map-g");
+    const info = d.properties.state;
 
     const colorLegendG = svg
       .append("g")
@@ -73,20 +74,16 @@ const Map = ({ data, view, year }) => {
       .text((d) => {
         const pred = d?.properties?.predictions;
         let output = `${d.properties.name}\n`;
+        if (pred) {
+          if (view === "Avg") {
+            for (let key in pred) {
+              output += `${key}: ${pred[key]}%`;
+            }
+          } else {
+            output += `${view}: ${pred[view]}%`;
+          }
+        }
         return output;
-      // .text((d) => {
-      //   const pred = d?.properties?.predictions;
-      //   let output = `${d.properties.name}\n`;
-      //   if (pred) {
-      //     if (view === "Avg") {
-      //       for (let key in pred) {
-      //         output += `${key}: ${pred[key]}%`;
-      //       }
-      //     } else {
-      //       output += `${view}: ${pred[view]}%`;
-      //     }
-      //   }
-      //   return output;
       });
 
     g.append("text")
@@ -101,6 +98,12 @@ const Map = ({ data, view, year }) => {
       .attr("text-anchor", "middle")
       .attr("class", "map-subheader")
       .text(subheader);
+    g.append("text")
+      .attr("x", width / 2)
+      .attr("y", 30)
+      .attr("text-anchor", "middle")
+      .attr("class", "map-info")
+      .text(info);
   };
 
   const colorLegend = (selection, props) => {
