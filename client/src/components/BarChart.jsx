@@ -62,7 +62,7 @@ const BarChart = ({ data, view, year }) => {
       .append("text")
       .attr("transform", `translate(${width / 2},${height - 10})`)
       .style("text-anchor", "middle")
-      .text("% Probability");
+      .text("Probability (%)");
 
     barG
       .append("text")
@@ -79,7 +79,7 @@ const BarChart = ({ data, view, year }) => {
       .attr("y", 35)
       .attr("text-anchor", "middle")
       .style("font-size", "1.5em")
-      .text(`Natural Disaster Prediction - ${view} (${year})`);
+      .text(`${year} Predictions for ${view}`);
 
     // Add hover effect
     svg
