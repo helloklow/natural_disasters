@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div id="app">
-      <div id="header">
+      <div className="header">
         <h1>U.S. Natural Disaster Predictions</h1>
       </div>
 
