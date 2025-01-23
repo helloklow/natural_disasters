@@ -25,3 +25,28 @@
   bottom: 4rem;
   right: 2rem;
 }
+
+/* User Input */
+#app .user-input {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem; */
+  float:left;
+  display:block;
+}
+
+/* #app .user-input .year-input {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+#app .user-input .nav-left {
+  display: flex;
+  gap: 3rem;
+}
+
+#app .mui-input {
+  width: 300px;
+} */
