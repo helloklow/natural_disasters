@@ -26,6 +26,13 @@ const Map = ({ data, view, year }) => {
     return states;
   };
 
+  // Print states
+  const printStates = async (data) => {
+    print(data)
+  }
+
+  printStates
+
   // render the US map
   const renderMap = (state_data) => {
     const svg = d3.select(svgRef.current);
