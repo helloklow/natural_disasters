@@ -32,25 +32,26 @@
   align-items: center;
   justify-content: space-between; */
   padding: 1rem 2rem;
-  float:left;
-  display:block;
+  float: left;
+  display: block;
 }
 
 #app .user-input .year-input {
-  display: flex;
+  /* display: flex;
   align-items: baseline;
-  gap: 2rem;
+  gap: 2rem; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-#app .mui-input {
-  width: 250px;
-  padding-top: 2rem;
+#app .user-input .mui-input {
+  width: 200px;
 } 
 
 #app .user-input .btn {
-  display: flex;
+  /* display: flex;
   align-items: baseline;
-  /* gap: 2rem; */
+  gap: 2rem; */
   padding-top: 2rem;
 }
 
