@@ -38,7 +38,7 @@ const Map = ({ data, view, year }) => {
 
     const pathGenerator = d3.geoPath().projection(projection);
 
-    const title = `Predicted ${view} incidents for ${year}`;
+    const title = `${year} predicted ${view} incidents`;
     const subheader = "*Hover over state for more detail";
     const g = svg.append("g").attr("class", "map-g");
 
@@ -76,10 +76,10 @@ const Map = ({ data, view, year }) => {
         if (pred) {
           if (view === "Avg") {
             for (let key in pred) {
-              output += `${key} : ${pred[key]}%`;
+              output += `${key}: ${pred[key]}%`;
             }
           } else {
-            output += `${view} : ${pred[view]}%`;
+            output += `${view}: ${pred[view]}%`;
           }
         }
         return output;
