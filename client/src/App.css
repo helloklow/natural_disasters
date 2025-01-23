@@ -129,8 +129,6 @@
   font-size: 0.75rem;
 }
 
-
-
 /* Bar chart */
 #app .chart-container .tooltip {
   padding: 0.5rem;
@@ -145,6 +143,15 @@
 
 #app .chart-container svg .bar:hover {
   opacity: 0.5;
+}
+
+/* Hide/Show Map/Bar */
+#section-map, #section-bar {
+  display: none;
+}
+
+#section-map:target, #section-bar:target {
+  display: block;
 }
 
 /* Error View */
