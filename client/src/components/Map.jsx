@@ -41,7 +41,6 @@ const Map = ({ data, view, year }) => {
     const title = `${year} predicted ${view} incidents`;
     const subheader = "*Hover over state for more detail";
     const g = svg.append("g").attr("class", "map-g");
-    const state = `${state_data}`;
 
     const colorLegendG = svg
       .append("g")
@@ -71,7 +70,7 @@ const Map = ({ data, view, year }) => {
       .attr("d", pathGenerator)
       .attr("fill", (d) => colorScale(colorValue(d)))
       .append("title")
-      .append("state")
+      .append("states")
       .text((d) => {
         const pred = d?.properties?.predictions;
         let output = `${d.properties.name}\n`;
