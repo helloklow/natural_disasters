@@ -64,10 +64,10 @@ function App() {
           <Paper id="section-map" className="map">
             <Map data={data} view={view} year={year} />
           </Paper>
-          <Paper id="section-bar">
+          {/* <Paper id="section-bar">
             <BarChart data={data} view={view} year={year} />
           </Paper>
-          <StateTable data={data} />
+          <StateTable data={data} /> */}
         </>
       ) : (
         <div className={`user-info ${error && "hidden"}`}>
