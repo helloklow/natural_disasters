@@ -58,10 +58,12 @@ html {
 
 /* User Input */
 #app .user-input {
-  display: flex;
-  align-items: left;
+  /* display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem; */
+  float:left;
+  display:block;
 }
 
 #app .user-input .year-input {
