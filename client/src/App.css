@@ -2,8 +2,6 @@
 
 #app {
   font-family: "Roboto", sans-serif;
-  background-color: #222424;
-  color: #ffffff;
   /* max-width: 1280px;
   margin: auto;
   margin-top: 2rem;
@@ -29,7 +27,6 @@
 
 /* User Input */
 #app .user-input {
-  background-color: #222424;
   padding: 1rem 2rem;
   float: left;
   display: block;
