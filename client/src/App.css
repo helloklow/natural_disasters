@@ -1,19 +1,20 @@
 #app {
   font-family: "Roboto", sans-serif;
+  background: #2c2b2b;
+  color: #ffffff;
   /* max-width: 1280px;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 3rem;
   min-height: 100vh;
-  padding: 0 1.25rem; */
-  background: #2c2b2b;
+  padding: 0 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 #app h1 {
   align-items: center;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
