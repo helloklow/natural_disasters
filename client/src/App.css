@@ -43,12 +43,11 @@
 
 #app .user-input .btn {
   padding-top: 2rem;
-  /* padding-bottom: 26rem; */
 }
 
 #app .user-input .map-bar {
   padding-top: 2rem;
-  padding-bottom: 26rem;
+  padding-bottom: 45rem;
 }
 
 /* Loading */
