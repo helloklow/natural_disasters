@@ -5,15 +5,13 @@ html {
 }
 
 #app {
-  /* font-family: "Roboto", sans-serif; */
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
-  sans-serif;
+  font-family: "Roboto", sans-serif;
   max-width: 1280px;
-  margin: auto;
+  /* margin: auto;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem; */
   min-height: 100vh;
-  padding: 0 1.25rem;
+  /* padding: 0 1.25rem; */
   background: #fcf4e8;
 }
 
