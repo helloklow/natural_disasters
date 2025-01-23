@@ -76,10 +76,10 @@ const Map = ({ data, view, year }) => {
         if (pred) {
           if (view === "Avg") {
             for (let key in pred) {
-              output += `${key} : ${pred[key]}%\n`;
+              output += `${key} : ${pred[key]}%`;
             }
           } else {
-            output += `${view} : ${pred[view]}%\n`;
+            output += `${view} : ${pred[view]}%`;
           }
         }
         return output;
