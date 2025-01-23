@@ -26,15 +26,15 @@ const Map = ({ data, view, year }) => {
     return states;
   };
 
-states.map((n,i)=>({n,i})) // each object as n: number, i: index
-  .sort((a,b)=>a.n-b.n).slice(-5) // sort, slice top 5
-  .forEach(({i})=>states[i]=`(${states[i]})`) // add parens by indexes
+// states.map((n,i)=>({n,i})) // each object as n: number, i: index
+//   .sort((a,b)=>a.n-b.n).slice(-5) // sort, slice top 5
+//   .forEach(({i})=>states[i]=`(${states[i]})`) // add parens by indexes
 
-for (let s in states) {
-  output += `${s}`;
-}
+// for (let s in states) {
+//   output += `${s}`;
+// }
 
-print(output)
+// print(output)
 
   // render the US map
   const renderMap = (state_data) => {
