@@ -63,7 +63,7 @@ const Map = ({ data, view, year }) => {
     };
 
     //colorScale.domain(d3.extent(state_data.features, colorValue)).interpolator(d3.interpolateOranges);
-    colorScale.domain([0, 50]).interpolator(d3.interpolateTurbo);
+    colorScale.domain([0, 50]).interpolator(d3.interpolateReds);
 
     // Add the color legend to the bottom of the map
     colorLegendG.call(colorLegend, {
@@ -113,7 +113,7 @@ const Map = ({ data, view, year }) => {
     const { height, width, dataScale } = props;
 
     const colorScale = d3
-      .scaleSequential(d3.interpolateTurbo)
+      .scaleSequential(d3.interpolateReds)
       .domain([0, width]);
     const bars = selection.selectAll(".bars").data([null]);
     bars
