@@ -14,51 +14,34 @@
 
 #app .header {
   margin-bottom: 1rem;
-  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-#app .table_btn {
-  align-items: center;
-  bottom: 4rem;
-  right: 2rem;
+  justify-content: center; */
 }
 
 /* User Input */
 #app .user-input {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
   padding: 1rem 2rem;
   float: left;
   display: block;
 }
 
 #app .user-input .year-input {
-  /* display: flex;
-  align-items: baseline;
-  gap: 2rem; */
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 #app .user-input .mui-input {
-  width: 200px;
+  width: 225px;
 } 
 
 #app .user-input .btn {
-  /* display: flex;
-  align-items: baseline;
-  gap: 2rem; */
   padding-top: 2rem;
+  width: 225px;
 }
-
-/* #app .user-input .nav-left {
-  display: flex;
-  gap: 3rem;
-} */
 
 /* Map */
 #app .map {
