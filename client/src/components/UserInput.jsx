@@ -10,19 +10,6 @@ import '../App.css'
 
 const UserInput = ({view, setView, fetchData, isLoading}) => {
 
-    function switchVisible() {
-        if (document.getElementById('section-map')) {
-            if (document.getElementById('section-map').style.display == 'none') {
-                document.getElementById('section-map').style.display = 'block';
-                document.getElementById('section-bar').style.display = 'none';
-            }
-            else {
-                document.getElementById('section-map').style.display = 'none';
-                document.getElementById('section-bar').style.display = 'block';
-            }
-        }
-    }
-
     const [input, setInput] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
 
@@ -90,10 +77,10 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
             <div className="btn">
                 <Button disabled={isLoading} variant="contained" onClick={handleBtn}>Predict</Button>
             </div>
-            <div className="map-bar">
+            {/* <div className="map-bar">
                 <input id="map-btn" type="button" value="VIEW MAP" onclick="switchVisible();"/>
                 <input id="bar-btn" type="button" value="VIEW BAR" onclick="switchVisible();"/>
-            </div>
+            </div> */}
       </Paper>
     )
 }
