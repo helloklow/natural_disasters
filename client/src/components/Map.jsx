@@ -41,9 +41,6 @@ const Map = ({ data, view, year }) => {
     const title = `${year} predicted ${view} incidents`;
     const subheader = "*Hover over state for more detail";
     const g = svg.append("g").attr("class", "map-g");
-    const info = (d) => {
-      return d?.properties?.predictions?.[state];
-    };
 
     const colorLegendG = svg
       .append("g")
@@ -100,12 +97,6 @@ const Map = ({ data, view, year }) => {
       .attr("text-anchor", "middle")
       .attr("class", "map-subheader")
       .text(subheader);
-    g.append("text")
-      .attr("x", width / 2)
-      .attr("y", 30)
-      .attr("text-anchor", "middle")
-      .attr("class", "map-info")
-      .text(info);
   };
 
   const colorLegend = (selection, props) => {
