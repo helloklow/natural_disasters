@@ -43,13 +43,15 @@
 }
 
 #app .mui-input {
-  width: 300px;
+  width: 250px;
+  padding-top: 2rem;
 } 
 
 #app .user-input .btn {
   display: flex;
   align-items: baseline;
-  gap: 2rem;
+  /* gap: 2rem; */
+  padding-top: 2rem;
 }
 
 /* #app .user-input .nav-left {
