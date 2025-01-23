@@ -1,7 +1,6 @@
 import * as d3 from "d3";
 import * as topojson from "topojson-client";
 import { useRef, useEffect } from "react";
-import { legend } from "@d3/color-legend"
 
 const Map = ({ data, view, year }) => {
   const WIDTH = 1000;
@@ -67,15 +66,11 @@ const Map = ({ data, view, year }) => {
     colorScale.domain([0, 50]).interpolator(d3.interpolateTurbo);
 
     // Add the color legend to the bottom of the map
-    legend({
-      color: d3.scaleSequential([0, 100], d3.interpolateTurbo),
-      title: "Percentage (%)"
-    })
-    // colorLegendG.call(colorLegend, {
-    //   dataScale: colorScale,
-    //   height: 20,
-    //   width: WIDTH / 1.5,
-    // });
+    colorLegendG.call(colorLegend, {
+      dataScale: colorScale,
+      height: 20,
+      width: WIDTH / 1.5,
+    });
 
     g.selectAll("path")
       .data(state_data.features)
