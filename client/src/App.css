@@ -14,8 +14,9 @@
 
 #app .header {
   margin-bottom: 1rem;
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* display: flex;
   flex-direction: column;
   align-items: center;
