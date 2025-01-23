@@ -55,7 +55,7 @@ const Map = ({ data, view, year }) => {
     //colorScale.domain(d3.extent(state_data.features, colorValue)).interpolator(d3.interpolateOranges);
     colorScale.domain([0, 50]).interpolator(d3.interpolateOranges);
 
-    // Just add the color legend to the bottom of the map
+    // Add the color legend to the bottom of the map
     colorLegendG.call(colorLegend, {
       dataScale: colorScale,
       height: 20,
