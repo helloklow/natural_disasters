@@ -76,12 +76,15 @@
 
 /* Info */
 #app .user-info {
-  width: 100vw;
+  width: 150px; 
+  height: 150px; 
+  padding: 0.5em;
+  /* width: 100vw;
   height: 100vh;
   display: flex;
-  /* flex-direction: column;
-  align-items: center; */
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; */
 }
 
 /* Map */
