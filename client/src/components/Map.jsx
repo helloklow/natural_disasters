@@ -41,7 +41,9 @@ const Map = ({ data, view, year }) => {
     const title = `${year} predicted ${view} incidents`;
     const subheader = "*Hover over state for more detail";
     const g = svg.append("g").attr("class", "map-g");
-    const info = d.properties.state;
+    const info = (d) => {
+      return d?.properties?.predictions?.[state];
+    };
 
     const colorLegendG = svg
       .append("g")
