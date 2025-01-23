@@ -48,7 +48,7 @@ const Map = ({ data, view, year }) => {
 
     const pathGenerator = d3.geoPath().projection(projection);
 
-    const title = `${year} predicted ${view} incidents`;
+    const title = `${year} Predictions for ${view}`;
     const subheader = "*Hover over state for more detail";
     const g = svg.append("g").attr("class", "map-g");
 
