@@ -85,7 +85,6 @@
 
 /* Map */
 #app .map {
-  background-color: rgb(37, 36, 36);
   display: flex;
   align-items: center;
   padding-top: 2rem;
