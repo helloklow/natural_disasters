@@ -30,10 +30,16 @@
 #app .user-input {
   /* display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem; */
+  justify-content: space-between; */
+  padding: 1rem 2rem;
   float:left;
   display:block;
+}
+
+#app .user-input .btn {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
 }
 
 /* #app .user-input .year-input {
