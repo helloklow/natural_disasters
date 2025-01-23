@@ -3,6 +3,7 @@
 #app {
   font-family: "Roboto", sans-serif;
   background-color: #222424;
+  color: #ffffff;
   /* max-width: 1280px;
   margin: auto;
   margin-top: 2rem;
@@ -16,7 +17,8 @@
 }
 
 #app .header {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  background-color: #222424;
   display: flex;
   justify-content: center;
   align-items: center;
