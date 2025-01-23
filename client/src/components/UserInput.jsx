@@ -77,9 +77,13 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
             <div className="btn">
                 <Button disabled={isLoading} variant="contained" onClick={handleBtn}>Predict</Button>
             </div>
-            <div className='map-bar'>
-                <Button href="#section-map">Map</Button>
-                <Button href="#section-bar">Bar</Button>
+            <div className="map-bar">
+                <div className="map-btn">
+                    <Button href="#section-map">Map</Button>
+                </div>
+                <div className="bar-btn">
+                    <Button href="#section-bar">Bar</Button>
+                </div>
             </div>
       </Paper>
     )

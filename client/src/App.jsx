@@ -62,12 +62,19 @@ function App() {
       {/* D3 Map */}
       {data ? (
         <>
+
+
           <Paper id="section-map" className="map">
             <Map data={data} view={view} year={year} />
           </Paper>
-          <Paper id="section-bar">
+
+
+
+
+          <Paper id="section-bar" className="bar">
             <BarChart data={data} view={view} year={year} />
           </Paper>
+
         </>
       ) : (
         <div className={`user-info ${error && "hidden"}`}>
