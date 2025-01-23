@@ -50,3 +50,62 @@
 #app .mui-input {
   width: 300px;
 } */
+
+/* Map */
+#app .map {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+#app .hidden {
+  display: none;
+}
+
+#app .map svg {
+  margin: auto;
+}
+
+#app .map svg .scale-text {
+  font-size: 0.75rem;
+}
+
+#app .map svg .map-g {
+  transform: translateX(50px);
+}
+
+#app .map svg .country {
+  stroke: #bdbdbd;
+  stroke-width: 1px;
+}
+
+#app .map svg .country:hover {
+  fill: #b0bec5;
+  cursor: pointer;
+}
+
+#app .map svg .map-title {
+  font-weight: bold;
+}
+
+#app .map svg .map-subheader {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+/* Bar chart */
+#app .chart-container .tooltip {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#app .chart-container {
+  margin-bottom: 2rem;
+}
+
+#app .chart-container svg .bar:hover {
+  opacity: 0.5;
+}
