@@ -70,10 +70,6 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
                 <MenuItem value={"Flood"}>Flood</MenuItem>
                 <MenuItem value={"Fire"}>Fire</MenuItem>
                 <MenuItem value={"Tornado"}>Tornado</MenuItem>
-                {/* <MenuItem value={"Avg"}>Avg</MenuItem> */}
-                {/* <MenuItem value={"Biological"}>Biological</MenuItem> */}
-                {/* <MenuItem value={"Severe Ice Storm"}>Severe Ice Storm</MenuItem> */}
-                {/* <MenuItem value={"Snowstorm"}>Snowstorm</MenuItem> */}
                 </Select>
             </FormControl>
             </div>
@@ -84,7 +80,6 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
             <div className='map-bar'>
                 <Button href="#section-map">Map</Button>
                 <Button href="#section-bar">Bar</Button>
-                {/* <Button href="#state_table">Table</Button> */}
             </div>
       </Paper>
     )

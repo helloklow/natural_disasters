@@ -69,7 +69,6 @@ function App() {
           <Paper id="section-bar">
             <BarChart data={data} view={view} year={year} />
           </Paper>
-          {/* <StateTable data={data} /> */}
         </>
       ) : (
         <div className={`user-info ${error && "hidden"}`}>
