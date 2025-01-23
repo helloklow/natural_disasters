@@ -1,7 +1,5 @@
 #app {
   font-family: "Roboto", sans-serif;
-  background: #2c2b2b;
-  color: #ffffff;
   /* max-width: 1280px;
   margin: auto;
   margin-top: 2rem;
@@ -16,5 +14,11 @@
 
 #app h1 {
   align-items: center;
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
+}
+
+#app .table_btn {
+  align-items: center;
+  bottom: 4rem;
+  right: 2rem;
 }
