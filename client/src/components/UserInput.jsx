@@ -79,7 +79,8 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
             </div>
 
             <div className="nav-right">
-                <Button href="#section-map">View Map</Button><br />
+                <Button href="#section-map">View Map</Button>
+                <p>|</p>
                 <Button href="#section-bar">View Bar</Button>
             </div>
       </Paper>
