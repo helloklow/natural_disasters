@@ -15,6 +15,14 @@ html {
 }
 
 #app .logo-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#app #logo {
   height: 200px;
 }
 
