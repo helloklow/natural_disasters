@@ -8,6 +8,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
 import { Paper } from "@mui/material";
+import logo from './logo-transparent-svg.svg';
 
 function App() {
   const URL = "https://natural-disaster-predictor-production.up.railway.app/";
@@ -36,7 +37,8 @@ function App() {
   return (
     <div id="app">
       <h1>U.S. Natural Disaster Predictor</h1>
-      <img id='logo' src="images/logo-transparent-png.png" alt='Natural Disasters App'></img>
+      <img src={logo} id="logo" alt="U.S. Natural Disaster Predictions" />
+      {/* <img id="logo" src="images/logo-transparent-png.png" alt="U.S. Natural Disaster Predictions"></img> */}
 
       {/* User Input */}
       <UserInput
