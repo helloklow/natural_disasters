@@ -10,6 +10,18 @@ import AlertTitle from "@mui/material/AlertTitle";
 import { Paper } from "@mui/material";
 import logo from './logo.png';
 
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  typography: {
+    allVariants: {
+      fontFamily: 'Poppins',
+      textTransform: 'none',
+      fontSize: 16,
+    },
+  },
+});
+
 function App() {
   const URL = "https://natural-disaster-predictor-production.up.railway.app/";
   const [year, setYear] = useState(new Date().getFullYear());
@@ -35,6 +47,8 @@ function App() {
   };
 
   return (
+    <ThemeProvider theme={theme}>
+
     <div id="app">
       <div className="logo-container">
         <img src={logo} id="logo" alt="U.S. Natural Disaster Predictions" />
@@ -100,6 +114,8 @@ function App() {
         </div>
       )}
     </div>
+
+    </ThemeProvider>
   );
 }
 

@@ -20,12 +20,7 @@ html {
 }
 
 #app .logo-container {
-  /* position: absolute;
-  display: flex;
-  flex-direction: column; */
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 #app h3 {
@@ -92,7 +87,7 @@ html {
 }
 
 #app .mui-input {
-  width: 300px;
+  width: 220px;
 }
 
 /* Map */
