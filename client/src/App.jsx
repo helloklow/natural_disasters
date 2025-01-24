@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div id="app">
-      <h1>USA Natural Disaster Predictor</h1>
+      <h1>U.S. Natural Disaster Predictor</h1>
 
       {/* User Input */}
       <UserInput
