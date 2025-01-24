@@ -79,7 +79,7 @@ html {
   display: flex;
   align-items: baseline;
   gap: 2rem;
-  width: 175px;
+  width: 180px;
 }
 
 #app .user-input .nav-left {
