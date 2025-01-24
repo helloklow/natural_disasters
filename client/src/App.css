@@ -15,11 +15,7 @@ html {
 }
 
 #app #logo {
-  position: relative;
   height: 175px;
-  /* left: 435px;
-  top: 20px;
-  padding-bottom: 40px; */
 }
 
 #app .user-info {

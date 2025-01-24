@@ -8,7 +8,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
 import { Paper } from "@mui/material";
-import logo from './logo-transparent-svg.svg';
+import logo from './logo-transparent-png.png';
 
 function App() {
   const URL = "https://natural-disaster-predictor-production.up.railway.app/";
