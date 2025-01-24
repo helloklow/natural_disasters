@@ -17,13 +17,15 @@ html {
 #app #logo {
   position: absolute;
   height: 220px;
-  margin-top: -5rem;
-  margin-bottom: -5rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
 }
 
 #app .user-info {
   padding: 3rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 #app .table_btn {

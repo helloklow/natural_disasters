@@ -72,8 +72,8 @@ function App() {
           <h2>Welcome!</h2>
           <p>This app is intended to predict potential natural disasters, specifically focused on the most common disasters in the U.S.</p>
           <div className="disaster-list">
-            <p>• Severe Storms</p>
-            <p>• Hurricanes</p>
+            <p>• Severe Storms<br />
+            • Hurricanes</p>
             <p>• Floods</p>
             <p>• Fires</p>
             <p>• Tornadoes</p>
