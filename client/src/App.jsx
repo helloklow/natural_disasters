@@ -69,9 +69,10 @@ function App() {
       ) : (
         <div className={`user-info ${error && "hidden"}`}>
           <Alert severity="info">
-            <AlertTitle>Info</AlertTitle>
             Enter year and select disaster to view predictions.
           </Alert>
+          <h2>Welcome!</h2>
+          <p>This app is intended to predict and identify potential natural disasters, specifically focused on the most common disasters in the U.S. Please enter the prediction year and select the type of disaster above.</p>
         </div>
       )}
 
