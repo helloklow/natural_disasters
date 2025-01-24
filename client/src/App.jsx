@@ -36,7 +36,7 @@ function App() {
   return (
     <div id="app">
       <h1>U.S. Natural Disaster Predictor</h1>
-      <img id='logo' src="../images/logo-transparent-png.png" alt='Trekker App'></img>
+      <img id='logo' src="images/logo-transparent-png.png" alt='Natural Disasters App'></img>
 
       {/* User Input */}
       <UserInput
