@@ -8,7 +8,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
 import { Paper } from "@mui/material";
-import logo from './logo-transparent-png.png';
+import logo from './logo-transparent-svg.svg';
 
 function App() {
   const URL = "https://natural-disaster-predictor-production.up.railway.app/";
@@ -69,11 +69,23 @@ function App() {
         </>
       ) : (
         <div className={`user-info ${error && "hidden"}`}>
-          {/* <Alert severity="info">
-            Enter year and select disaster to view predictions.
-          </Alert> */}
           <h2>Welcome!</h2>
-          <p>This app is intended to predict potential natural disasters, specifically focused on the most common disasters in the U.S. Please enter the prediction year and select the type of disaster above.</p>
+          <p>This app is intended to predict potential natural disasters, specifically focused on the most common disasters in the U.S.</p>
+          <div className="disaster-list">
+            <p>• Severe Storms</p>
+            <p>• Hurricanes</p>
+            <p>• Floods</p>
+            <p>• Fires</p>
+            <p>• Tornadoes</p>
+          </div>
+          <Alert severity="info">
+            Enter a year and select a disaster above to view predictions.
+          </Alert>
+          <h3>Notes:</h3>
+          <p>Predictions are based on U.S. Natural Disaster Declarations dataset from{" "}
+          <a href="https://www.kaggle.com/datasets/headsortails/us-natural-disaster-declarations">
+            Kaggle
+          </a>. This app was built for educational purposes only and does not guarantee accurate predictions.</p>
         </div>
       )}
 
