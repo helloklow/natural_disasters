@@ -12,7 +12,7 @@ import { Paper } from "@mui/material";
 function App() {
   const URL = "https://natural-disaster-predictor-production.up.railway.app/";
   const [year, setYear] = useState(new Date().getFullYear());
-  const [view, setView] = useState("Severe Storm");
+  const [view, setView] = useState("Avg");
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [isLoading, setisLoading] = useState(false);
@@ -35,9 +35,7 @@ function App() {
 
   return (
     <div id="app">
-      <div className="header">
-        <h1>U.S. Natural Disaster Predictions</h1>
-      </div>
+      <h1>USA Natural Disaster Predictor</h1>
 
       {/* User Input */}
       <UserInput
@@ -53,36 +51,35 @@ function App() {
         <div className="error-view">
           <Alert severity="error" className="error_message">
             <AlertTitle>Error</AlertTitle>
-            <p>The server has reached it's usage limit :'(</p>
+            <p>Server has reached it's usage limits.</p>
           </Alert>
         </div>
       )}
 
-      {/* Map / Bar Chart Display */}
+      {/* Map and Bar Chart Display */}
       {data ? (
         <>
           <Paper id="section-map" className="map">
             <Map data={data} view={view} year={year} />
           </Paper>
-          <Paper id="section-bar" className="bar">
+          <Paper id="section-bar">
             <BarChart data={data} view={view} year={year} />
           </Paper>
         </>
       ) : (
         <div className={`user-info ${error && "hidden"}`}>
           <Alert severity="info">
-            {/* <AlertTitle>Info</AlertTitle> */}
-            Please enter year and select disaster to view predictions.
+            <AlertTitle>Info</AlertTitle>
+            Enter year and select disaster to view predictions.
           </Alert>
         </div>
       )}
 
-      {/* Loader */}
       {isLoading && (
         <div className="loader">
           <CircularProgress />
           <span className="loading-text">
-            Loading prediction...
+            Loading predictions...
           </span>
         </div>
       )}
