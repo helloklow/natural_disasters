@@ -20,12 +20,12 @@ html {
 }
 
 #app .logo-container {
-  position: absolute;
-  /* display: flex;
+  /* position: absolute;
+  display: flex;
   flex-direction: column; */
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 #app h3 {
