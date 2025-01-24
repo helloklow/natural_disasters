@@ -21,9 +21,9 @@ html {
 }
 
 #app .logo-container {
-  position: absolute;
+  /* position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
   align-items: left;
   justify-content: left;
 }
