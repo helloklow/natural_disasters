@@ -68,11 +68,11 @@ function App() {
         </>
       ) : (
         <div className={`user-info ${error && "hidden"}`}>
-          <Alert severity="info">
+          {/* <Alert severity="info">
             Enter year and select disaster to view predictions.
-          </Alert>
+          </Alert> */}
           <h2>Welcome!</h2>
-          <p>This app is intended to predict and identify potential natural disasters, specifically focused on the most common disasters in the U.S. Please enter the prediction year and select the type of disaster above.</p>
+          <p>This app is intended to predict potential natural disasters, specifically focused on the most common disasters in the U.S. Please enter the prediction year and select the type of disaster above.</p>
         </div>
       )}
 
