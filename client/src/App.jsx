@@ -33,19 +33,6 @@ function App() {
     }
   };
 
-  // function switchVisible() {
-  //   if (document.getElementById('section-map')) {
-  //       if (document.getElementById('section-map').style.display == 'none') {
-  //           document.getElementById('section-map').style.display = 'block';
-  //           document.getElementById('section-bar').style.display = 'none';
-  //       }
-  //       else {
-  //           document.getElementById('section-map').style.display = 'none';
-  //           document.getElementById('section-bar').style.display = 'block';
-  //       }
-  //   }
-  // }
-
   return (
     <div id="app">
       <div className="header">
@@ -62,7 +49,6 @@ function App() {
       />
 
       {/* Error Display */}
-      {/* Error view */}
       {error && (
         <div className="error-view">
           <Alert severity="error" className="error_message">
@@ -72,15 +58,13 @@ function App() {
         </div>
       )}
 
-      {/* D3 Map */}
+      {/* Map / Bar Chart Display */}
       {data ? (
         <>
           <Paper id="section-map" className="map">
-            <input id="bar-btn" type="button" value="VIEW BAR" onclick="switchVisible();"/>
             <Map data={data} view={view} year={year} />
           </Paper>
           <Paper id="section-bar" className="bar">
-            <input id="map-btn" type="button" value="VIEW MAP" onclick="switchVisible();"/>
             <BarChart data={data} view={view} year={year} />
           </Paper>
         </>
@@ -93,6 +77,7 @@ function App() {
         </div>
       )}
 
+      {/* Loader */}
       {isLoading && (
         <div className="loader">
           <CircularProgress />
