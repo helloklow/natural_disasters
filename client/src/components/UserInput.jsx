@@ -46,15 +46,15 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
     return (
         <Paper className="user-input">
             <div className="nav-left">
-            <div className="year-input">
-                <TextField 
-                size='small'
-                label={`Enter Year`}
-                value={input}
-                error={errorMessage.length > 0}
-                onChange={handleUserInput}
-                helperText={errorMessage ? errorMessage : `${new Date().getFullYear()} to 2200`} />
-            </div>
+                <div className="year-input">
+                    <TextField 
+                    size='small'
+                    label={`Enter Year`}
+                    value={input}
+                    error={errorMessage.length > 0}
+                    onChange={handleUserInput}
+                    helperText={errorMessage ? errorMessage : `${new Date().getFullYear()} to 2200`} />
+                </div>
         
             <FormControl className='mui-input' size='small'>
                 <InputLabel id="demo-simple-select-label">Select Disaster</InputLabel>
