@@ -17,7 +17,7 @@ html {
 #app .logo-container img {
   width: 25%;
   height: auto;
-  padding-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 #app .logo-container {
