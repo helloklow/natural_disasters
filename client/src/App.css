@@ -14,8 +14,12 @@ html {
   padding: 0 1.25rem;
 }
 
-#app h1 {
-  margin-bottom: 1rem;
+#app #logo {
+  position: relative;
+  height: 175px;
+  /* left: 435px;
+  top: 20px;
+  padding-bottom: 40px; */
 }
 
 #app .user-info {

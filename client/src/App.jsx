@@ -36,9 +36,7 @@ function App() {
 
   return (
     <div id="app">
-      <h1>U.S. Natural Disaster Predictor</h1>
       <img src={logo} id="logo" alt="U.S. Natural Disaster Predictions" />
-      {/* <img id="logo" src="images/logo-transparent-png.png" alt="U.S. Natural Disaster Predictions"></img> */}
 
       {/* User Input */}
       <UserInput
