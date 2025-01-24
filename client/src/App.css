@@ -17,16 +17,15 @@ html {
 #app .logo-container img {
   width: 25%;
   height: auto;
-  margin-bottom: 5rem;
 }
 
-#app .logo-container {
-  /* position: absolute;
+/* #app .logo-container {
+  position: absolute;
   display: flex;
-  flex-direction: column; */
+  flex-direction: column;
   align-items: left;
   justify-content: left;
-}
+} */
 
 #app h3 {
   padding-top: 5rem;
