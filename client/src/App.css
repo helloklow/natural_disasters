@@ -15,7 +15,10 @@ html {
 }
 
 #app #logo {
-  height: 250px;
+  position: absolute;
+  height: 220px;
+  margin-top: -5rem;
+  margin-bottom: -5rem;
 }
 
 #app .user-info {
