@@ -26,10 +26,10 @@ const Map = ({ data, view, year }) => {
     return states;
   };
 
-  // render the US map
+  // Render the U.S. map
   const renderMap = (state_data) => {
     const svg = d3.select(svgRef.current);
-    // remove content from svg
+    // Remove content from svg
     svg.selectAll("*").remove();
     const width = WIDTH;
     const height = HEIGHT;
@@ -38,7 +38,7 @@ const Map = ({ data, view, year }) => {
 
     const pathGenerator = d3.geoPath().projection(projection);
 
-    const title = `${year} Predictions for ${view}`;
+    const title = `${year}: ${view} Predictions`;
     const subheader = "*Hover over state for more detail";
     const g = svg.append("g").attr("class", "map-g");
 
@@ -52,10 +52,9 @@ const Map = ({ data, view, year }) => {
       return d?.properties?.predictions?.[view];
     };
 
-    //colorScale.domain(d3.extent(state_data.features, colorValue)).interpolator(d3.interpolateOranges);
     colorScale.domain([0, 50]).interpolator(d3.interpolateReds);
 
-    // Add the color legend to the bottom of the map
+    // Add color legend to the bottom of the map
     colorLegendG.call(colorLegend, {
       dataScale: colorScale,
       height: 20,
@@ -141,7 +140,7 @@ const Map = ({ data, view, year }) => {
       }
     };
 
-    // draw the map
+    // Render the map
     handleRender();
   }, [data, view]);
 

@@ -79,7 +79,7 @@ const BarChart = ({ data, view, year }) => {
       .attr("y", 35)
       .attr("text-anchor", "middle")
       .style("font-size", "1.5em")
-      .text(`${year} Predictions for ${view}`);
+      .text(`${year}: ${view} Predictions`);
 
     // Add hover effect
     svg

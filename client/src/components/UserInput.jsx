@@ -14,7 +14,7 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
     const [errorMessage, setErrorMessage] = useState("");
 
     const handleUserInput = (event) => {
-        // clear error if present
+        // Clear error if present
         if (errorMessage)
             setErrorMessage("")
         setInput(event.target.value);
@@ -25,20 +25,20 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
     }
 
     const handleBtn = () => {
-        //update the year
+        // Update the year
         if (!(/^\d{4}$/.test(input))) {
-            // thrown an input error
+            // Error if year is invalid
             setErrorMessage("Error: Not a valid year")
             return;
         }
 
         if (input < new Date().getFullYear() || input > 2200) {
-            // year out of bounds
+            // Error if year is invalid
             setErrorMessage("Error: Not a valid year")
             return;
         }
 
-        // year is valid, make the API call and clean the input
+        // Fetch data and clean the input
         setInput("");
         fetchData(input);
     }
