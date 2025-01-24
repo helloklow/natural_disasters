@@ -15,13 +15,13 @@ html {
 }
 
 #app .logo-container img {
-  width: 35%;
+  width: 30%;
   height: auto;
 }
 
 #app .logo-container {
-  /* position: absolute;
-  display: flex;
+  position: absolute;
+  /* display: flex;
   flex-direction: column; */
   align-items: center;
   justify-content: center;
