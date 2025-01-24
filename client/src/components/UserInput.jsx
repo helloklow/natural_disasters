@@ -49,7 +49,7 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
             <div className="year-input">
                 <TextField 
                 size='small'
-                label={`Enter year`}
+                label={`Enter Year`}
                 value={input}
                 error={errorMessage.length > 0}
                 onChange={handleUserInput}
@@ -57,12 +57,12 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
             </div>
         
             <FormControl className='mui-input' size='small'>
-                <InputLabel id="demo-simple-select-label">Select disaster</InputLabel>
+                <InputLabel id="demo-simple-select-label">Select Disaster</InputLabel>
                 <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 value={view}
-                label="Select disaster"
+                label="Select Disaster"
                 onChange={handleView}
                 >
                 <MenuItem value={"Severe Storm"}>Severe Storm</MenuItem>
@@ -72,13 +72,14 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
                 <MenuItem value={"Tornado"}>Tornado</MenuItem>
                 </Select>
             </FormControl>
-            </div>
 
             <div className="btn">
                 <Button disabled={isLoading} variant="contained" onClick={handleBtn}>Predict</Button>
             </div>
+            </div>
+
             <div className="nav-right">
-                <Button href="#section-map">View Map</Button>
+                <Button href="#section-map">View Map</Button><br />
                 <Button href="#section-bar">View Bar</Button>
             </div>
       </Paper>
