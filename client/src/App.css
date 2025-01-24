@@ -34,11 +34,11 @@ html {
   margin-left: 7rem;
 }
 
-#app .table_btn {
+/* #app .table_btn {
   position: absolute;
   bottom: 4rem;
   right: 2rem;
-}
+} */
 
 #app .loader {
   position: absolute;

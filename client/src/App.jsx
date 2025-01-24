@@ -95,7 +95,7 @@ function App() {
             • Tornadoes</p>
           </div>
           <Alert severity="info">
-            Enter a year and select a disaster above to view predictions!
+            Enter a year and select a disaster above to view predictions.
           </Alert>
           <h3>Notes:</h3>
           <p>Predictions are based on U.S. Natural Disaster Declarations dataset from{" "}
@@ -114,7 +114,7 @@ function App() {
         </div>
       )}
     </div>
-    
+
     </ThemeProvider>
   );
 }
