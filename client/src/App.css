@@ -12,15 +12,15 @@ html {
   margin-bottom: 3rem;
   min-height: 100vh;
   padding: 0 1.25rem;
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 #app h1 {
   margin-bottom: 1rem;
+}
+
+#app .user-info {
+  padding: 3rem;
+  margin-top: 5rem;
 }
 
 #app .table_btn {
@@ -62,8 +62,6 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  float:left;
-  display:block;
 }
 
 #app .user-input .year-input {
@@ -124,7 +122,7 @@ html {
   font-size: 0.75rem;
 }
 
-/* Bar chart */
+/* Bar Chart */
 #app .chart-container .tooltip {
   padding: 0.5rem;
   display: flex;
@@ -138,40 +136,6 @@ html {
 
 #app .chart-container svg .bar:hover {
   opacity: 0.5;
-}
-
-/* Table */
-#app .state_row {
-  background-color: #ffffff;
-  color: black;
-}
-
-#app .header_row th {
-  font-weight: bold;
-}
-
-/* Discaimer */
-
-#app #disclaimer .disclaimer_box {
-  background-color: #ffffff;
-}
-
-#app #disclaimer .disclaimer_box path {
-  fill: #263238 !important;
-}
-
-#app #disclaimer.show_top {
-  position: absolute;
-  bottom: 2rem;
-  left: 0;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-#app #disclaimer.show_bottom {
-  margin-top: 2rem;
 }
 
 /* Error View */
