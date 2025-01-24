@@ -54,7 +54,7 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
                 error={errorMessage.length > 0}
                 onChange={handleUserInput}
                 helperText={errorMessage ? errorMessage : `Enter year between ${new Date().getFullYear()} and 2200`} />
-            </div>
+            </div><br />
         
             <FormControl className='mui-input' size='small'>
                 <InputLabel id="demo-simple-select-label">Select Disaster</InputLabel>
