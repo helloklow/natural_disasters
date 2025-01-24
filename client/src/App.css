@@ -15,12 +15,11 @@ html {
 }
 
 #app .logo-container {
-  height: 20px;
-  padding-bottom: 3rem;
+  height: 200px;
 }
 
 #app h3 {
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 
 #app .user-info {
