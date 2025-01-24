@@ -16,12 +16,14 @@ html {
 
 #app #logo {
   height: 220px;
-  padding-top: -1rem;
-  padding-bottom: -1rem;
+  padding-top: -3rem;
+  padding-bottom: -3rem;
+  border-top: -3rem;
+  border-bottom: -3rem;
 }
 
 #app h3 {
-  padding-top: 5rem;
+  padding-top: 50rem;
 }
 
 #app .user-info {
