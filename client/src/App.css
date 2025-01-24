@@ -7,11 +7,11 @@ html {
 #app {
   font-family: "Roboto", sans-serif;
   max-width: 1280px;
-  /* margin: auto;
+  margin: auto;
   margin-top: 2rem;
-  margin-bottom: 3rem; */
+  margin-bottom: 3rem;
   min-height: 100vh;
-  /* padding: 0 1.25rem; */
+  padding: 0 1.25rem;
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -58,10 +58,10 @@ html {
 
 /* User Input */
 #app .user-input {
-  /* display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem; */
+  padding: 1rem 2rem;
   float:left;
   display:block;
 }
