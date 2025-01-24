@@ -16,8 +16,10 @@ html {
 
 #app #logo {
   height: 220px;
-  margin-top: -1rem;
-  margin-bottom: -1rem;
+}
+
+#app h3 {
+  padding-top: 2rem;
 }
 
 #app .user-info {
