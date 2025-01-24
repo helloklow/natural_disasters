@@ -53,7 +53,7 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
                 value={input}
                 error={errorMessage.length > 0}
                 onChange={handleUserInput}
-                helperText={errorMessage ? errorMessage : `Between ${new Date().getFullYear()} and 2200`} />
+                helperText={errorMessage ? errorMessage : `${new Date().getFullYear()} to 2200`} />
             </div>
         
             <FormControl className='mui-input' size='small'>
