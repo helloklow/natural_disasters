@@ -1,5 +1,5 @@
 # U.S. Natural Disaster Prediction App
-View the application here: https://helloklow-natural-disasters-1.onrender.com/
+View the application here: https://natural-disaster-predictions.onrender.com
 
 
 ## Introduction
