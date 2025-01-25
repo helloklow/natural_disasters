@@ -28,13 +28,13 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
         // Update the year
         if (!(/^\d{4}$/.test(input))) {
             // Error if year is invalid
-            setErrorMessage("Error: Not a valid year")
+            setErrorMessage("Invalid year")
             return;
         }
 
         if (input < new Date().getFullYear() || input > 2200) {
             // Error if year is invalid
-            setErrorMessage("Error: Not a valid year")
+            setErrorMessage("Invalid year")
             return;
         }
 
@@ -46,15 +46,15 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
     return (
         <Paper className="user-input">
             <div className="nav-left">
-            <div className="year-input">
-                <TextField 
-                size='small'
-                label={`Enter Year`}
-                value={input}
-                error={errorMessage.length > 0}
-                onChange={handleUserInput}
-                helperText={errorMessage ? errorMessage : `Enter year between ${new Date().getFullYear()} and 2200`} />
-            </div>
+                <div className="year-input">
+                    <TextField 
+                    size='small'
+                    label={`Enter Year`}
+                    value={input}
+                    error={errorMessage.length > 0}
+                    onChange={handleUserInput}
+                    helperText={errorMessage ? errorMessage : `${new Date().getFullYear()} to 2200`} />
+                </div>
         
             <FormControl className='mui-input' size='small'>
                 <InputLabel id="demo-simple-select-label">Select Disaster</InputLabel>
@@ -79,7 +79,7 @@ const UserInput = ({view, setView, fetchData, isLoading}) => {
             </div>
 
             <div className="nav-right">
-                <Button href="#section-map">View Map</Button>
+                <Button href="#section-map">View Map</Button><br />
                 <Button href="#section-bar">View Bar</Button>
             </div>
       </Paper>

@@ -79,7 +79,7 @@ html {
   display: flex;
   align-items: baseline;
   gap: 2rem;
-  width: 350px;
+  width: 180px;
 }
 
 #app .user-input .nav-left {
@@ -88,7 +88,7 @@ html {
 }
 
 #app .mui-input {
-  width: 350px;
+  width: 200px;
 }
 
 /* Map */

@@ -25,7 +25,7 @@ const theme = createTheme({
 function App() {
   const URL = "https://natural-disaster-predictor-production.up.railway.app/";
   const [year, setYear] = useState(new Date().getFullYear());
-  const [view, setView] = useState("Avg");
+  const [view, setView] = useState("Severe Storm");
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [isLoading, setisLoading] = useState(false);
