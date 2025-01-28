@@ -23,7 +23,7 @@ const theme = createTheme({
 });
 
 function App() {
-  const URL = "https://natural-disaster-predictor-production.up.railway.app/";
+  const URL = "https://natural-disasters-api.onrender.com/";
   const [year, setYear] = useState(new Date().getFullYear());
   const [view, setView] = useState("Severe Storm");
   const [data, setData] = useState(null);
