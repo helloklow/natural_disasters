@@ -19,7 +19,7 @@ def process_data_and_save_to_csv(df, output_file):
 
     # Create new rows for each state, year, and incident type, indicating if it occurred
     # Create dictionary to store the most common incident types for each state and year
-    state_year_incidents = {}
+    state_year_incidents={}
 
     # Iterate over each row in the dataset
     for index, row in data.iterrows():
@@ -35,10 +35,10 @@ def process_data_and_save_to_csv(df, output_file):
                 state_year_incidents[(state, year)]={incident: 0 for incident in common_incidents}
 
             # Set the occurred value to 1 for this incident type
-            state_year_incidents[(state, year)][incident_type] = 1
+            state_year_incidents[(state, year)][incident_type]=1
 
-    # Create a new DataFrame from the state_year_incidents dictionary
-    new_data = []
+    # Create a new dataframe from the state_year_incidents dictionary
+    new_data=[]
     for (state, year), incidents in state_year_incidents.items():
         for incident, occurred in incidents.items():
             new_data.append([state, year, incident, occurred])
