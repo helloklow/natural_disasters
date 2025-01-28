@@ -1,6 +1,6 @@
 import datetime
 from flask import Flask, request, jsonify
-from server.model import predict_by_year
+from model import predict_by_year
 from flask_cors import CORS
 from waitress import serve
 
